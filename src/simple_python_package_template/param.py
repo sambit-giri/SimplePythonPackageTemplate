@@ -33,7 +33,7 @@ def cosmo_par():
         "Om" : 0.31,               # matter overdensity
         "Or" : 9e-5,               # radiation overdensity
         "Ok" : 0.0,                # Curvature overdensity
-        "Ode": None,               # Dark energy overdensity; if None, it will be derived from others.
+        "Ode": None,               # Dark energy overdensity
         "h"  : 0.68,               # Nb of redshift bins
         }
     if par['Ode'] is None: par['Ode'] = 1-par['Om']-par['Or']-par['Ok']
