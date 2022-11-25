@@ -41,5 +41,5 @@ If you find any bugs or unexpected behavior in the code, please feel free to ope
 
 If you are using this template, please mention the following in your package:
 
-    This package uses the template provided at https://github.com/sambit-giri/simple_python_package_template. 
+    This package uses the template provided at https://github.com/sambit-giri/simple_python_package_template/ 
     
