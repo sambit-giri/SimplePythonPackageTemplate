@@ -8,13 +8,13 @@ from setuptools import setup, find_packages
 #from distutils.core import setup
 
 
-setup(name='simple-python-package-template',
+setup(name='simple_python_package_template',
       version='0.0.1',
       author='Sambit Giri',
       author_email='sambit.giri@su.se',
       packages=find_packages("src"),
       package_dir={"": "src"},
-      package_data={'simple-python-package-template': ['input_data/*']},
+      package_data={'simple_python_package_template': ['input_data/*']},
       install_requires=['numpy', 'scipy', 'matplotlib',
                         'pytest'],
       include_package_data=True,
