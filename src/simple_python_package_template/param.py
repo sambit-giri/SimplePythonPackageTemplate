@@ -20,20 +20,23 @@ class Bunch(object):
 def code_par(): 
     # This is an example showing a few parameters for a cosmological simulations.
     par = {
-        "zmin": 6.0,                # min redshift
-        "zmax": 60.0,               # max redshift (not tested below 40)
-        "Nz": 100,                  # Nb of redshift bins
-        "verbose": True,            # If True, then the simulator prints messages.
+        "zmin": 0.01,               # min redshift
+        "zmax": 9.00,               # max redshift (not tested below 40)
+        "Nz": 20,                  # Nb of redshift bins
+        "verbose": True,           # If True, then the simulator prints messages.
         }
     return Bunch(par)
 
 def cosmo_par(): 
     # This is an example showing a few parameters for a cosmological simulations.
     par = {
-        "Om" : 0.31,                # min redshift
-        "Ode": 0.69,               # max redshift (not tested below 40)
-        "h"  : 0.68,                  # Nb of redshift bins
+        "Om" : 0.31,               # matter overdensity
+        "Or" : 9e-5,               # radiation overdensity
+        "Ok" : 0.0,                # Curvature overdensity
+        "Ode": None,               # Dark energy overdensity; if None, it will be derived from others.
+        "h"  : 0.68,               # Nb of redshift bins
         }
+    if par['Ode'] is None: par['Ode'] = 1-par['Om']-par['Or']-par['Ok']
     return Bunch(par)
 
 def param():
