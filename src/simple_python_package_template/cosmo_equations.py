@@ -5,8 +5,22 @@ from .basic_functions import *
 from . import constants as const
 
 class FriedmannEquation:
-
+    '''
+    Friedmann equation.
+    
+    Attributes:
+        H: function to give the value of the Hubble parameter in km/s/Mpc.
+    
+    '''
     def __init__(self, param):
+        '''
+        Initialize the file.
+        
+        Parameters:
+            param (object): object containing the parameter values
+        Returns:
+            Nothing
+        '''
         self.param = param
         self.create_functions()
 
@@ -23,8 +37,27 @@ class FriedmannEquation:
         else: return self.Ha(a)
 
 class CosmoDistances(FriedmannEquation):
+    '''
+    Cosmological distances
+    
+    Attributes:
+        H              : function to give the value of the Hubble parameter in km/s/Mpc.
+        comoving_dist  : function to give the comoving distance in Mpc.
+        proper_dist    : function to give the comoving distance in Mpc.
+        angular_dist   : function to give the comoving distance in Mpc.
+        luminosity_dist: function to give the comoving distance in Mpc.
+    
+    '''
 
     def __init__(self, param):
+        '''
+        Initialize the file.
+        
+        Parameters:
+            param (object): object containing the parameter values
+        Returns:
+            Nothing
+        '''
         self.param = param
         self.create_functions()
 
