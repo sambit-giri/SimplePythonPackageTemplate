@@ -2,7 +2,7 @@ import numpy as np
 from scipy.integrate import quad
 
 from .basic_functions import *
-import constants as const
+from . import constants as const
 
 class FriedmannEquation:
 
