@@ -1,6 +1,6 @@
 # SimplePythonPackageTemplate
 
-This is a simple python package template that can be forked and used.. More documentation can be found at its [readthedocs](https://simplepythonpackagetemplate.readthedocs.io/) page.
+This is a simple python package template that can be forked and used.. More documentation can be found at its [readthedocs](https://SimplePythonPackageTemplate.readthedocs.io/) page.
 
 ## Package details
 

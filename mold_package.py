@@ -36,10 +36,10 @@ filename = 'README.md'
 print('Molding {} ...'.format(filename))
 with open(filename, 'r') as f:
     file = f.readlines()
-for ii, line in enumerate(file):
-    file[ii] = line.replace(template_name, package_name)
-    file[ii] = line.replace(template_author, author_name)
-    file[ii] = line.replace(template_email, author_email)
+for ii, line in enumerate(file): file[ii] = line.replace(template_name, package_name)
+for ii, line in enumerate(file): file[ii] = line.replace(template_author, author_name)
+for ii, line in enumerate(file): file[ii] = line.replace(template_email, author_email)
+for ii, line in enumerate(file): 
     if 'If you are using this template, please mention the following in your package:' in line:
         if package_name != 'SimplePythonPackageTemplate': file[ii] = ''
 file[2] = file[2].replace(file[2].split('. More documentation')[0], package_description_line)
