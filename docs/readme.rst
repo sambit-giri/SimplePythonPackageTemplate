@@ -1,5 +1,5 @@
 ==============================
-simple_python_package_template
+SimplePythonPackageTemplate
 ==============================
 
 This is a simple python package template that can be forked and used.

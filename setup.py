@@ -1,6 +1,6 @@
 '''
-Created on 25 November 2022
-@author: Sambit Giri
+Created on 2022-12-23
+@author: The Author
 Setup script
 '''
 
@@ -8,13 +8,13 @@ from setuptools import setup, find_packages
 #from distutils.core import setup
 
 
-setup(name='simple_python_package_template',
+setup(name='SimplePythonPackageTemplate',
       version='0.0.1',
-      author='Sambit Giri',
-      author_email='sambit.giri@su.se',
+      author='The Author',
+      author_email='the.author@website.com',
       packages=find_packages("src"),
       package_dir={"": "src"},
-      package_data={'simple_python_package_template': ['input_data/*']},
+      package_data={'SimplePythonPackageTemplate': ['input_data/*']},
       install_requires=['numpy', 'scipy', 'matplotlib',
                         'pytest'],
       include_package_data=True,
