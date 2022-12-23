@@ -10,18 +10,18 @@ template_email  = 'the.author@website.com'
 template_date   = '25 November 2022'
 template_user_name = 'the-author'
 
-package_name = input('Enter your package name:')
+package_name = input('Enter your package name: ')
 package_name = 'SimplePythonPackageTemplate' if len(package_name)==0 else package_name
-package_description_line = input('Enter a one line description of your package:')
+package_description_line = input('Enter a one line description of your package: ')
 package_description_line = 'This is a simple python package template that can be forked and used.' \
                                 if len(package_description_line)==0 else package_description_line
-user_name = input('Enter the user name:')
+user_name = input('Enter the user name: ')
 user_name = 'the-author' if len(user_name)==0 else user_name
-author_name = input('Enter the author name:')
+author_name = input('Enter the author name: ')
 author_name = 'The Author' if len(author_name)==0 else author_name
-author_email = input('Enter your author email:')
+author_email = input('Enter your author email: ')
 author_email = 'the.author@website.com' if len(author_email)==0 else author_email
-date_created = input('Enter the date when the package was created:')
+date_created = input('Enter the date when the package was created: ')
 date_created = str(today) if len(date_created)==0 else date_created
 
 print(''.join(['-' for i in range(100)]))
